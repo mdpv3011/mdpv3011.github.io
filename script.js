@@ -23,24 +23,26 @@
 
 // // console.log(parseInt('123', 3));
 
+function convertBinaryToDecimal(binary) {
+  var decimal = 0;
+  var power = 1;
 
-
-function binaryToDecimal(binary) {
-    let decimal = 0;
-    let power = 0;
-  
-    for (let i = binary.length - 1; i >= 0; i--) {
-      if (binary[i] === "1") {
-        decimal += Math.pow(2, power);
-      }
-      power++;
+  for (var i = binary.length - 1; i >= 0; i--) {
+    if (binary[i] == "1") {
+      decimal += power;
     }
-  
-    return decimal;
+    power *= 2;
   }
 
-  const binary = "1010";
-  const decimal = binaryToDecimal(binary);
-  
-  console.log(decimal);
-  
+  return decimal;
+}
+
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  var binary = document.querySelector("input[name='binary']").value;
+
+  var decimal = convertBinaryToDecimal(binary);
+
+  document.querySelector("#result").innerHTML = "Decimal: " + decimal;
+});
