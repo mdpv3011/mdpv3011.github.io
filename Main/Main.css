@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-size: 62.5%;  --- Lo pase a .contenedor para que no afecte a toda la pagina (Wally) */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(4, 10, 3);
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 6em;
+  background-color: rgb(51, 90, 69);
+  font-family: "Outfit", sans-serif;
+}
+
+.navLogos {
+  display: flex;
+  padding-left: 2em;
+  margin: 0.5em;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-right: 3em;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: rgb(0, 255, 0);
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  font-size: 62.5%;
+}
+
+.RevetriaMatias {
+  width: 25em;
+  height: 30em;
+  border-radius: 3em;
+  border: 2px solid #333;
+  color: black;
+  background-image: url(images/acu1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.alan-wake2 {
+  width: 25em;
+  height: 30em;
+  border-radius: 3em;
+  border: 2px solid #333;
+  color: black;
+  background-image: url(images/alan-wake2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hollow-knight {
+  width: 25em;
+  height: 30em;
+  border-radius: 3em;
+  border: 2px solid #333;
+  color: black;
+  background-image: url(images/hollow-knight.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lol {
+  width: 25em;
+  height: 30em;
+  border-radius: 3em;
+  border: 2px solid #333;
+  color: black;
+  background-image: url(images/lol.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.RevetriaMatias .titulo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 6.5px;
+  transform: translate(-50%);
+  border-radius: 5em;
+  backdrop-filter: blur(20px);
+  color: #fff;
+  cursor: pointer;
+}
+
+.RevetriaMatias .titulo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.RevetriaMatias:hover {
+  transform: scale(1.5);
+}
+
+.alan-wake2:hover {
+  transform: scale(1.5);
+}
+
+.hollow-knight:hover {
+  transform: scale(1.5);
+}
+
+.lol:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 10em;
+  background-color: rgb(51, 90, 69);
+  margin-top: 5em;
+}
+
+@media (max-width: 1250px) {
+  .navLogos {
+    padding-left: 0em;
+    margin: 1.5em;
+  }
+  .navLinks {
+    margin-right: 1em;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 165px;
+  background-color: #517866;
+  padding: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form input {
+  margin: 4px auto;
+}

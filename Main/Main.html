@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Main.css" />
+    <link rel="icon" href="images/favicon.ico" type="icon" />
+    <title>Trabajo Final</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="navLogos">
+          <img src="./images/Logo.png" alt="Gaming Zone Logo" />
+          <img src="./images/Texto.png" alt="Gaming Zone Texto" />
+        </div>
+        <div class="navLinks">
+          <a class="" href="#">Home</a>
+          <a href="#">Acerca de</a>
+          <a href="#">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <br /><br /><br /><br /><br /><br />
+      <h1
+        style="
+          text-align: center;
+          color: rgba(0, 201, 114, 0.5);
+          font-family: 'Courier New', Courier, monospace;
+        "
+      >
+        CATÁLOGO DE JUEGOS
+      </h1>
+      <br /><br /><br />
+
+      <!-- CATALOGO DE JUEGOS -->
+
+      <div class="contenedor">
+        <div
+          class="RevetriaMatias"
+          onclick="location.href='../MatiasRevetria/AssassinsCreed.html';"
+        >
+          <!-- <a href="../MatiasRevetria/AssassinsCreed.html"> tuve que sacar perdon, tapaba el div de al lado (Marcelo)
+            <div class="titulo">
+              <h1>Assassins Creed Unity</h1>
+            </div>
+          </a> -->
+        </div>
+
+        <div
+          class="alan-wake2"
+          onclick="location.href='../alan-wake2/index.html';"
+        ></div>
+
+        <div
+          class="hollow-knight"
+          onclick="location.href='../walterame/gameInfo.html';"
+        ></div>
+
+        <div
+          class="lol"
+          onclick="location.href='../iWildGunsPage/index.html';"
+        ></div>
+      </div>
+
+      <hr />
+      <br /><br /><br />
+
+      <!-- FORMULARIO -->
+
+      <div id="error" style="color: rgb(2, 104, 70); text-align: center"></div>
+      <form id="form">
+        <h1>Registrarse</h1>
+
+        <input type="text" id="nombre" placeholder="Nombre" />
+        <input type="password" id="password" placeholder="Contraseña" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="file" multiple accept=".jpg, .png" />
+
+        <button type="submit" id="boton">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <a href="#">
+        <img
+          src="../Main/images/LogoYtexto.png"
+          alt="Gaming Zone Logo y Texto"
+          height="150px"
+        />
+      </a>
+    </footer>
+    <script src="Main.js"></script>
+  </body>
+</html>

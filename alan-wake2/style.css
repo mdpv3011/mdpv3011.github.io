@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+html {
+  height: 100vh;
+  overflow: visible;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  justify-content: space-between;
+  height: 6em;
+  background-color: rgb(51, 90, 69);
+  font-family: "Outfit", sans-serif;
+}
+
+.navLogos {
+  display: flex;
+  padding-left: 2em;
+  margin: 0.5em;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-right: 3em;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: rgb(0, 255, 0);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #000000;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.section1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("./img/matija-masek-screengrab-2b_flattened.png");
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(0.2px);
+  margin-bottom: 15vh;
+}
+/* .section1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("./img/matija-masek-screengrab-2b_flattened_bottom2.png");
+  background-size: cover;
+} */
+.section2 {
+  background: url("./img/geoffroy-calis-cauldron-lake-geoffroy-calis-01_darkened.png");
+  background-size: 1920px 1080px;
+}
+.section3 {
+  background: url("./img/geoffroy-calis-cauldron-lake-geoffroy-calis-15_darkened.png");
+  background-size: 1920px 1080px;
+}
+.section4 {
+  background: url("./img/ciFHpHWMM4Cz22vBkxi3PU_darkened.png");
+  background-size: 1920px 1080px;
+  margin-bottom: 1vh;
+}
+.section5 {
+  background: black;
+}
+
+.section1 .text_main {
+  top: 20%;
+  transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, -10%);
+}
+
+.text-main {
+  top: 32%;
+  left: 50%;
+  position: absolute;
+  font-family: "Franklin Gothic Medium";
+  font-size: 5vw;
+  color: rgb(189, 189, 189);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+  white-space: nowrap;
+}
+
+.text-sec {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-family: "Franklin Gothic Medium";
+  font-size: 1vw;
+  color: rgba(160, 179, 184, 0.8);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+  text-align: center;
+}
+
+.text-footer {
+  top: 10%;
+  left: 50%;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  color: rgba(160, 179, 184, 0.8);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+  text-align: center;
+}
+
+.text-footer a {
+  text-decoration: none;
+}
+/* a:link {
+  color: rgba(160, 179, 184, 0.8);
+}
+a:visited {
+  color: rgba(146, 175, 184, 0.8);
+}
+a:hover {
+  color: rgba(196, 202, 204, 0.8);
+}
+a:active {
+  color: rgba(157, 204, 204, 0.8);
+} */
+
+.video-vimeo {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 10em;
+  background-color: rgb(51, 90, 69);
+  /* margin-top: 5em; */
+}
