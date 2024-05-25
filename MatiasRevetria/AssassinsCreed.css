@@ -11,19 +11,33 @@ body {
 }
 
 header {
-  width: 100%;
-  height: 25vh;
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(51, 90, 69);
 }
 
 .banner {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: larger;
+  margin-top: 5vh;
+}
+
+.banner:hover{
+  #banner1{
+    color: blue;
+  }
+  #banner3{
+    color: red;
+  }
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  height: 6em;
+  flex-direction: row;
+  height: 20vh;
   background-color: rgb(51, 90, 69);
   font-family: "Outfit", sans-serif;
 }
@@ -65,12 +79,16 @@ main {
   flex-wrap: wrap;
   align-items: center;
 }
-.seccion .video iframe {
-  width: 40vw;
-  height: 60vh;
+.video{
+  width: 50vw;
+  height: 50vh;
   margin: 5em;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+.display{
+width: 100%;
+height: 100%;
 }
 
 .seccion .video:hover {
@@ -118,19 +136,46 @@ footer {
 }
 
 @media only screen and (max-width: 1250px) {
-  h1,
-  p,
-  ul {
-    font-size: 15px;
+
+  header {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(51, 90, 69);
   }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 6vh;
+    width: 100vw;
+    background-color: rgb(51, 90, 69);
+    font-family: "Outfit", sans-serif;
+  }
+
+  .banner img{
+    width: 40vw;
+    height: 15vh;
+  }
+
   .BOX {
     width: 60vw;
     height: auto;
     text-align: left;
   }
 
-  .video iframe {
+  .BOX h1,
+  p,
+  ul {
+    font-size: 15px;
+  }
+
+  .seccion .video{
     width: 100vw;
-    height: 40vh;
+    height: 60vh;
+  }
+  .display{
+    width: 100%;
+    height: 100%;
   }
 }

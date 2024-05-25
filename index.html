@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Main/Main.css" />
-    <link rel="icon" href="./Main/images/favicon.ico" type="icon" />
+    <link rel="icon" href="./Main/images/favicon.ico" type="image/ico" />
     <title>Trabajo Final</title>
 </head>
 
@@ -25,7 +25,7 @@
     </header>
     <main>
         <br /><br /><br /><br /><br /><br />
-        <h1 style="
+        <h1 id="h1-catalogo" style="
           text-align: center;
           color: rgba(0, 201, 114, 0.5);
           font-family: 'Courier New', Courier, monospace;
@@ -64,14 +64,32 @@
             <input type="text" id="nombre" placeholder="Nombre" />
             <input type="password" id="password" placeholder="Contraseña" />
             <input type="email" id="email" placeholder="Email" />
-            <input type="file" multiple accept=".jpg, .png" />
+            <br>
+            <label for="modo-juego"><b>-Elegir un modo de juego.</b></label>
+            <select id="modo-juego">
+                <option value="jugador-unico">Jugador único</option>
+                <option value="multijugador">Multijugador</option>
+            </select>
+            <br>
+            <label for="archivo"><b>-Subir una imágen.</b></label>
+            <input type="file" multiple accept=".jpg, .png" id="archivo" />
+            <br>
+            <p><b>-Seleccionar género.</b></p> <br>
+            <label for="accion">Acción</label>
+            <input type="radio" id="accion" name="genero">
+            <label for="misterio">Misterio</label>
+            <input type="radio" id="misterio" name="genero">
+            <label for="aventura">Aventura</label>
+            <input type="radio" id="aventura" name="genero">
+            <label for="moba">MOBA</label>
+            <input type="radio" id="moba" name="genero">
 
             <button type="submit" id="boton">Enviar</button>
         </form>
     </main>
     <footer>
         <a href="#">
-            <img src="./Main/images/LogoYtexto.png" alt="Gaming Zone Logo y Texto" height="150px" />
+            <img src="./Main/images/LogoYtexto.png" alt="Gaming Zone Logo y Texto" height="150" />
         </a>
     </footer>
     <script src="./Main/Main.js"></script>

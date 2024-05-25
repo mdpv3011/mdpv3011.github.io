@@ -37,6 +37,8 @@ nav {
   align-items: center;
   gap: 1em;
   margin-right: 3em;
+
+  white-space: nowrap;
 }
 
 .navLinks a {
@@ -162,12 +164,14 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 165px;
+  height: 40em;
   background-color: #517866;
   padding: 30px;
   font-family: "Courier New", Courier, monospace;
+  width: 100%;
 }
 
-form input {
-  margin: 4px auto;
+form input,
+form select {
+  margin: 6px auto;
 }

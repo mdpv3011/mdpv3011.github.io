@@ -2,8 +2,8 @@
 
 html {
   height: 100vh;
-  overflow: visible;
-  margin: 0;
+  overflow: hidden;
+  /* margin: 0; */
 }
 
 header {
@@ -32,6 +32,7 @@ nav {
   align-items: center;
   gap: 1em;
   margin-right: 3em;
+  white-space: nowrap;
 }
 
 .navLinks a {
@@ -76,14 +77,14 @@ body {
   filter: blur(0.2px);
   margin-bottom: 15vh;
 }
-/* .section1::after {
+.section1::after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   background: url("./img/matija-masek-screengrab-2b_flattened_bottom2.png");
   background-size: cover;
-} */
+}
 .section2 {
   background: url("./img/geoffroy-calis-cauldron-lake-geoffroy-calis-01_darkened.png");
   background-size: 1920px 1080px;
@@ -171,4 +172,15 @@ footer {
   height: 10em;
   background-color: rgb(51, 90, 69);
   /* margin-top: 5em; */
+}
+
+@media screen and (max-width: 600px) {
+  .text-sec {
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-main {
+    font-size: 4vh;
+  }
 }
